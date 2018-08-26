@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="."  default="war" name="Finance">
+    <path id="classpath">
+        <fileset dir="WebRoot/WEB-INF/lib/" includes="*.jar"/>
+    </path>
+	<target name="clean">
+       <delete dir="build"/>
+	</target>
+	<target name="compile" depends="clean">
+		 <javac srcdir="src" destdir="WebRoot/WEB-INF/classes" includeAntRuntime="false" encoding="utf-8">
+		 	<compilerarg line="-Xlint:unchecked" />  
+            <classpath refid="classpath"/>
+         </javac>
+		<copy todir="WebRoot/WEB-INF/classes">  
+			<fileset dir="src">  
+				<include name="*.xml" />  
+			    <include name="*.properties" />  
+		   </fileset>  
+		 </copy> 
+    </target>
+    <target name="war" depends="compile">
+    	<war destfile="Finance.war" webxml="WebRoot/WEB-INF/web.xml">
+    		<fileset dir="WebRoot"/>
+    		<lib dir="WebRoot/WEB-INF/lib"/>
+    		<classes dir="WebRoot/WEB-INF/classes"/>
+    	</war>
+    </target>
+</project>

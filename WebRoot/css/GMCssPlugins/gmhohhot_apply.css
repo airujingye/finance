@@ -1,0 +1,110 @@
+/*呼市网上申请部分*/
+.gm_apply{
+	padding:0 20px;
+}
+.gm_apply .gm_apply_address{
+	font-size: 14px;
+    color: #333;
+    line-height: 35px;
+    padding-right: 15px;
+}
+.gm_apply .gm_apply_address,.gm_apply .gm_apply_homelable{
+	font-size: 14px;
+    text-align: right;
+    color: #333;
+    line-height: 35px;
+    padding-right: 15px;
+}
+.gm_apply .gm_apply_address span{
+	float:left;
+	color:#333;
+}
+.gm_apply .gm_apply_address .iradio_square-blue{
+	float:left;
+	margin: 7px 0;
+}
+.gm_apply .gm_apply_btn{
+	text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.gm_apply .gm_apply_btn button{
+	background: #1c7eba;
+    color: #fff;
+    border: none;
+    margin-right: 20px;
+}
+.gm_apply .gm_apply_home{
+	font-size: 16px;
+    color: #333;
+    text-align: left;
+    line-height:24px;
+}
+.gm_apply .gm_apply_home img{
+	width: 24px;
+    height: 100%;
+}
+.gm_apply .gm_clear{
+	padding-top: 10px;
+}
+.gm_apply .gm_apply_homeinput input,
+.gm_apply .gm_apply_homeinput select{
+	width: 96%;
+    height: 35px;
+    font-size: 14px;
+    float: left;
+}
+.gm_apply .gm_apply_homeinput input.gm_apply_setting{
+	width: 90%;
+}
+.gm_apply .gm_apply_home span{
+	color: #333;
+}
+.gm_apply .gm_apply_homeinput span.gm_redlabel{
+	color:red;
+}
+.gm_powerusers,.gm_dutyusers{
+	margin-top: 20px;
+	position: relative;
+    display: inline-block;
+}
+.gm_powerusers .gm_online_powerusers,.gm_dutyusers .gm_online_dutyusers{
+	margin-bottom: 15px;
+    padding: 40px 0 10px 10px;
+    border: 1px dashed #D2D2D2;
+    border-radius: 5px;
+}
+.gm_powerusers .gm_online_powerusers .gm_role_name,
+.gm_dutyusers .gm_online_dutyusers .gm_role_name{
+	height: 30px;
+    background: #ffffff;
+    padding: 0 10px;
+    position: absolute;
+    top: -15px;
+    left: 50px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    text-align: left;
+    display: inline-block;
+}
+.gm_powerusers .gm_online_powerusers .gm_role_name span,
+.gm_dutyusers .gm_online_dutyusers .gm_role_name span{
+	color: #333333;
+}
+.gm_powerusers .gm_online_addDuty,
+.gm_dutyusers .gm_online_addDuty{
+	position: absolute;
+    top: 0;
+    right: 0px;
+    text-align: center;
+}
+.gm_powerusers .gm_online_addDuty button,
+.gm_dutyusers .gm_online_addDuty button{
+	border-color: #1c7eba;
+    background: #1c7eba;
+    color: #FFF;
+}
+.gm_online_cue{
+	padding: 20px 35px 20px 35px;
+}

@@ -1,0 +1,138 @@
+
+body{
+	background: url(../../../img/imgPicture/hh_registerbgnew.png) no-repeat;
+}
+.gmhohhot_login,
+.gmhohhot_register{
+    position: absolute;
+    left: 50%;
+    margin-left:-260px;
+    max-width: 520px;
+}
+.gmhohhot_login{
+    top: 50%;
+    margin-top:-225px;
+    height: 450px;
+}
+.gmhohhot_header{
+	height: 50px;
+    width: 100%;
+}
+.gmhohhot_header a,.gmhohhot_header span{
+	color: #FFF;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 32px;
+    font-size:.725rem;
+}
+.gmhohhot_header a:nth-child(2),
+.gmhohhot_header span{
+	float: right;
+}
+.gmhohhot_header a:nth-child(2){
+    width: 77px;
+    border: 1px solid #fff;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 6px;
+}
+.gmhohhot_login_content,
+.gmhohhot_register_content{
+    width: 100%;
+    background: #fff;
+    padding: 0px 65px;
+    border-top: 6px solid #0066c0;
+}
+.gmhohhot_login_content{
+	height: 400px;
+}
+.gmhohhot_login_content .gmhohhot_logo,
+.gmhohhot_register_content .gmhohhot_logo{
+	text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width:100%;
+    height:120px;
+}
+.gmhohhot_login_content .form-horizontal .form-group,
+.gmhohhot_register_content .form-horizontal .form-group{
+	margin-left:0;
+	margin-right:0;
+}
+.gmhohhot_login_content .form-horizontal .form-group span,
+.gmhohhot_register_content .form-horizontal .form-group span{
+	background: none;
+    height: 44px;
+    border-radius: 0;
+    padding: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.gmhohhot_login_content .form-horizontal .form-group span i{
+	font-size: 22px;
+    color: #c2c2c2;
+}
+.gmhohhot_login_content .form-horizontal .form-group input,
+.gmhohhot_register_content .form-horizontal .form-group input{
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0;
+    height: 44px;
+    font-size: 14px;
+    line-height: 35px;
+}
+.gmhohhot_login_findPw {
+	font-size:.725rem;
+    display: inline-block;
+    padding-top: 2px;
+    color: #1780da;
+    float: right;
+    margin-right: 8px;
+    text-decoration: none;
+}
+.gmhohhot_login_loginsub,
+.gmhohhot_register_regsub{
+	width: 100%;
+    border-radius: 0;
+    height: 44px;
+    font-size: 18px;
+    line-height: 35px;
+    background: #0066c0;
+    color: #fff;
+    border: none;
+}
+.gmhohhot_login_loginsub:hover{
+	color: #fff;
+    background: #337ab7;
+}
+/*用户注册*/
+.gmhohhot_register{
+    top: 50%;
+    margin-top:-325px;
+    height: 650px;
+}
+.gmhohhot_register_content{
+	height: 600px;
+}
+.gmhohhot_register_content .form-horizontal .gmhohhot_register_form input{
+	border: 1px solid #ccc;
+	width: 94%;
+}
+.gmhohhot_register_content .form-horizontal .gmhohhot_register_form input.gm_cationCode{
+	width:60%;
+	float:left;
+}
+.gmhohhot_register_content .form-horizontal .gmhohhot_register_form input.identifying_code{
+    border: none;
+    width:34%;
+    height: 44px;
+    line-height: 34px;
+    background: #0066c0;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    float: left;
+}

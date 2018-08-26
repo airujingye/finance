@@ -1,0 +1,53 @@
+@CHARSET "UTF-8";
+
+/* 登录页主体  */
+.gmgs_loginbg {background:url(../../img/hh_registerbgnew.png) no-repeat center center;}
+.gmgs_main {width:520px;position:absolute;left:50%;top:50%;margin-left:-265px;}
+.gmgs_login_main {/* height:450px; */margin-top:-225px;}
+.gmgs_loginbg form {display: inline-block;width: 100%;}
+.gmgs_loginbg .gmgs_submit_group{margin-top:20px;}
+.gmgs_loginbg .gmgs_top {width:100%;height:50px;}
+.gmgs_loginbg .gmgs_top a {color:#FFF;display:inline-block;text-decoration:none;line-height:32px;}
+.gmgs_loginbg .gmgs_top .gmgs_register {width:77px;border:1px solid #fff;float:right;text-align:center;line-height:30px;border-radius: 6px;}
+.gmgs_loginbg .gmgs_top .gmgs_text {color:#FFF;display:inline-block;float:right;line-height:32px;}
+.gmgs_loginbg .gmgs_container {display: inline-block;width:100%;background:#fff;padding: 0px 65px 20px 65px;border-top:6px solid #0066c0;}
+.gmgs_loginbg .gmgs_container .gmgs_title {text-align:center;margin-top:10px;margin-bottom:20px;}
+.gmgs_loginbg .gmgs_container .gmgs_title .gmgs_title_address .gmgs_title_address_name {font-size: 32px;color: #0066c0;font-weight: bold;margin:0;}
+.gmgs_loginbg .gmgs_container .gmgs_input {width:100%;padding-left:40px;height:44px;font-size:14px;line-height:35px;background: url(../../../img/imgPicture/gmgs_login.png) no-repeat;background-size: 80px;}
+.gmgs_loginbg .gmgs_container .gmgs_username {background-position: 10px -27px;}
+.gmgs_loginbg .gmgs_container .gmgs_userpwd {background-position: 10px -74px;}
+.gmgs_sunbtn {width: 100%;border-radius: 0;height: 44px;font-size: 18px;line-height: 35px;background: #0066c0;color: #fff;border: none;}
+.gmgs_login_findpwd {display: inline-block;padding-top: 2px;color: #1780da;float: right;margin-right: 8px;text-decoration: none;}
+
+/* 登录页手机样式  */
+.gmgs_phone_register {height: 75px;line-height: 75px;}
+.gmgs_phone_register a {color: #0066c0;text-align: center;font-size: 12px;}
+.gmgs_cationcode {width:275px !important;border:1px solid #ccc;}
+
+/* 找回密码页   */
+.gmgs_forgetpwd_main {/* height: 630px; */margin-top:-315px;}
+.gmgs_resetpwd {font-size:18px;display:inline-block;}
+.gmgs_registertext {display:inline-block;color:#c2c2c2;font-size:14px;float:right;padding-top:19px;margin-right:20px;}
+.gmgs_forgetpwdbbtn {width: 96%;}
+.gmgs_loginbg .gmgs_container .gmgs_register_form .gmgs_input,.gmgs_loginbg .gmgs_container .gmgs_forgetpwd_form .gmgs_input {width: 96%;border-radius: 0;background: none;padding-left:10px;}
+
+/* 注册页  */
+.gmgs_register_main {margin-top:-330px;}
+
+/* 登录页适配手机  */
+@media screen and (max-width: 767px){
+	/* 登录  */
+	.gmgs_main {width:100%;left:0;margin-left:0;}
+	.gmgs_main .gmgs_container {padding:0;border:none;}
+	.gmgs_main .gmgs_container .gmgs_title {text-align:center;margin-top:10px;margin-bottom:20px;}
+	.gmgs_main .gmgs_container .gmgs_title img {width:70px;height:70px;}
+	.gmgs_main .gmgs_container .gmgs_title .gmgs_title_address .gmgs_title_address_name {font-size:28px;}
+	.form-horizontal .form-group {margin-left:0;margin-right:0;}
+	.gmgs_loginbg {background:none !important;}
+	.gmgs_cationcode {width:60% !important;}
+	.gmgs_forgetpwd_main,.gmgs_register_main {padding: 0 10px 0 20px;}
+	
+}
+
+
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">	
+<struts>
+	<package name="finance" namespace="/finance" extends="struts-default">
+		<action name="*" class="com.greatmap.gmbuilder.finance.action.{1}Action" method="{2}">
+			<result name="menu">/menu.jsp</result>
+		    <result name="success" type="redirect">/success.jsp?redirectUrl=finance/${redirectUrl}</result>
+			<result name="list">/WEB-INF/finance/{1}_list.jsp</result>
+			<result name="info">/WEB-INF/finance/{1}_info.jsp</result>
+			<result name="table">/WEB-INF/finance/{1}_table.jsp</result>
+			<result name="input">/WEB-INF/finance/{1}_input.jsp</result>
+			<result name="batchinput">/WEB-INF/finance/{1}_batchinput.jsp</result>
+			<result name="income">/WEB-INF/finance/{1}_pay.jsp</result>
+			<result name="pay">/WEB-INF/finance/{1}_income.jsp</result>
+			<!-- 通用匹配 -->
+			<result name="common">/WEB-INF/finance/{1}_{2}.jsp</result>
+			<!-- 统计 -->
+			<result name="statistics">/WEB-INF/finance/{1}_statistics.jsp</result>
+			<!-- 导出 -->
+			<result name="exportExcel" type="stream">
+				<param name="contentType">text/plain</param>  
+               	<param name="contentDisposition">attachment;fileName="${fileName}"</param>  
+               	<param name="inputName">DownloadFile</param>  
+               	<param name="bufferSize">1024</param>
+			</result> 
+		</action>
+	</package>
+</struts> 

@@ -1,0 +1,150 @@
+/* CSS Document */
+/*body公共样式*/
+body,html{
+	font-family:"微软雅黑";
+	color: #333;
+}
+a {
+	color: #333;
+}
+a:hover {
+	color: #337ab7;
+}
+/*头部*/
+.gmbbp_login_nav{
+	padding:0 15px;
+}
+.gmbbp_login_nav_left h1 {
+	margin: 0;
+	padding: 0;
+	margin : 10px 0;
+}
+.gmbbp_login_nav_left h1 a {
+	display: inline-block;
+    width: 100%;
+    height: 60px;
+    color: transparent;
+}
+.gmbbp_login_nav_left h1 a.gmbbl_login{
+	overflow:hidden;
+}
+.gmbbp_login_nav_left h1 a  img{
+	height:100%;
+}
+.gmbbp_login_nav_right {
+	text-align: right;
+	line-height:80px;
+}
+.gmbbp_login_nav_right a {
+	margin-left: 10px;
+}
+/*login页面*/
+.gmbbp_login_body {
+	height: 460px;
+	padding-top: 50px;
+	background: #ccc url(img/gmp_loginbg.png) no-repeat  center center;
+	background-size: cover;
+}
+.gmbbp_login_box {
+	width: 550px;
+	border-radius: 10px;
+	margin: 0 auto;
+}
+.gmbbp_login_box .form-group,.gmbbp_login_box .btn{
+	height:69px;
+}
+.gmbbp_login_userlogin {
+	font-size: 20px;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.gmbbp_login_input_box {
+	width: 430px;
+	height: 69px;
+	vertical-align: middle;
+	margin: 5px 0 0 -5px;
+	filter: alpha(opacity=100);
+	-moz-opacity: 1.0;
+	opacity: 1.0;
+	border-left: none;
+	border-top-right-radius: 0.5em;
+	border-top-left-radius: 0em;
+	border-bottom-left-radius: 0em;
+	border-bottom-right-radius: 0.5em;
+	float:right;
+}
+.gmbbp_login_checkbox {
+	font-size: 16px;
+	color: #fff;
+}
+.gmbbp_login_checkbox label {
+	color: #fff;
+	font-weight: 500;
+}
+.gmbbp_login_input_sub {
+	width: 100%;
+	height: 69px;
+	border: none;
+	background: rgba(51,122,183,.7);
+	color: #fff;
+	font-size: 18px;
+	border-radius: 5px;
+}
+.gmbbp_login_input_sub:hover {
+	background: rgba(51,122,183,1);
+	color: #fff;
+}
+.gmbbp_login_userbg {
+	display: inline-block;
+	background: #fff;
+	width: 120px;
+	height: 69px;
+	padding: 18px 0 0 15px;
+	margin-top: 5px;
+	vertical-align: middle;
+	border-top-left-radius: 0.5em;
+	border-bottom-left-radius: 0.5em;
+	border: 1px solid #ccc;
+	border-right: none;
+	float:left;
+}
+.gmbbp_login_bg1 {
+	background: #fff url(img/gmp_listmodel.png) no-repeat;
+	background-position: -238px -95px;
+}
+.gmbbp_login_bg2 {
+	background: #fff url(img/gmp_listmodel.png) no-repeat;
+	background-position: -238px -146px;
+}
+.gmbbp_login_foot{
+	width: 100%;
+	height: 120px;
+	line-height: 2.7;
+	color: #2d2d2d;
+	font-size: 14px;
+	padding-top: 30px;
+}
+/*媒体查询*/
+@media screen and (max-width: 414px) {
+    .gmbbp_login_nav_right {
+    line-height: normal;
+	margin-top:1rem;
+	}
+	.gmbbp_login_box{
+		width:400px;	
+	}
+	.gmbbp_login_input_box{
+		width:280px;
+	}
+}
+@media screen and (max-width: 320px) {
+	.gmbbp_login_box{
+		width:290px;	
+	}
+	.gmbbp_login_input_box{
+		width:170px;
+	}
+}

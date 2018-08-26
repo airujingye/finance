@@ -1,0 +1,188 @@
+/* CSS Document */
+body,html{margin:0 auto;padding:0;width:100%;height:100%;overflow:hidden;background:#fbfbfb; font-family:"微软雅黑";font-size:12px;}
+ul li{ list-style:none; padding:0; margin:0;}
+ul{ padding:0; margin:0;}
+form{width:100%;}
+/* 公共样式  */
+a{text-decoration: none;color:#373c3f;}
+a:focus, a:hover{text-decoration: none;}
+.left{float: left;}
+.right{float: right;}
+.clear:after,.clear:before{content: " ";display: table;}
+.clear:after{clear: both;}
+.checkbox{min-height: 20px;margin-bottom: 0;font-weight: 400;}
+
+/* 插件 */
+.wrapper{
+	top:0;
+	margin-top:0;
+}
+
+/*头部*/
+.gmlogin{
+	width:100%;
+	height:100%;
+}
+.gmlogin_header{
+	position:absolute;
+	top:0;
+	width:100%;
+	height:80px;
+	background: rgba(244,249,251,0.05);
+	z-index:2;
+}
+.gmlogin_header .gmlogin_left{
+	margin-left:15px;
+}
+.gmlogin_header .gmlogin_left span{
+	font-size:28px;
+	color:#fff;
+}
+.gmlogin_header .gmlogin_left a{
+	display:inline-block;
+	color:#333;
+}
+.gmlogin_header .gmlogin_left a img{
+	margin-top:10px;
+}
+.gmlogin_header .gmlogin_left a:hover{
+	color:#333;
+}
+.gmlogin_header .gmlogin_right {
+	padding-top:28px;
+	margin-right:15px;
+	text-align:right;
+}
+.gmlogin_header .gmlogin_right img{
+	width:20px;
+	height:20px;
+	margin-top:-6px;
+	vertical-align: middle;
+}
+.gmlogin_header .gmlogin_right span{
+	font-size:16px;
+	color:#fff;
+}
+/*登录内容*/
+.gmlogin_content{
+	position:absolute;
+	width:486px;
+	min-height:300px;
+	left:50%;
+	top:50%;
+	margin:-200px 0 0 -243px;
+	z-index:2;
+	background: rgba(244,249,251,0.3);
+	border-radius:3px;
+}
+.gmlogin_content .gmtab{
+	margin:0 0 26px 0;
+}
+.gmlogin_content .gmtab a {
+	display:inline-block;
+	width: 178px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    font-size: 22px;
+    padding: 0;
+    border-radius: inherit;
+    border: none !important;
+}
+.gmlogin_content .gmtab a.gmlogin_content_li{
+	width:100%;
+}
+.gmlogin_content .gmLogin_form_group{
+	margin:0 auto 18px auto;
+	width:278px;
+}
+.gmlogin_content .gmLogin_form_group input{
+	width:228px;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	border-radius:4px;
+	font-size: 14px;
+	padding:12px 10px 12px 38px;
+	background: rgba(244,249,251,0.2);
+	-webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+  	margin:0 auto;
+  	outline: 0;
+}
+.gmlogin_content .gmLogin_form_group input:focus {
+	border: none;
+	background:#fff;
+	width:260px;
+}
+.gmlogin_content .gmLogin_form_group input:hover{
+	background: rgba(244,249,251,0.4);
+}
+.gmlogin_content .gmLogin_btn{
+	width:100%; 
+	height:40px; 
+	border:none; 
+	background:#fff;
+	color:#0da09f ;  
+	font-size:18px;
+	filter:alpha(opacity=60); 
+	-moz-opacity:0.6; 
+	opacity:0.6;
+	border-radius: 3px;
+}
+.gmlogin_content .gmLogin_btn:hover{
+	filter:alpha(opacity=70); 
+	-moz-opacity:.7; 
+	opacity:.7; 
+}
+.gmlogin_content .gmLogin_form_group .gmlogin_yzm{
+	width:77px;
+}
+.gmlogin_content .gmLogin_form_group .gmlogin_remember{
+	width:auto;
+	vertical-align:middle;
+}
+.gmlogin_content .gmLogin_form_group .checkbox,.gmlogin_content .gmLogin_form_group .checkbox a{
+	color:#fff;
+}
+.gmlogin_content .checkbox input{
+	vertical-align: middle;
+	margin-top:0px;
+	width:auto;
+	border:1px solid rgba(255, 255, 255, 0.4);
+}
+.gmlogin_content .gmlogin_code button{
+	border: none;
+    border-radius: 4px;
+    height: 42px;
+    line-height: 42px;
+    background: #2196f3;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    filter:alpha(opacity=70); 
+	-moz-opacity:0.7; 
+	opacity:0.7;
+}
+.gmLogin_content .gmlogin_box {
+	text-align:center;
+	padding-top:16px;
+}
+
+
+/*底部*/
+.gmlogin_footer{
+	position: absolute;
+	width:520px;
+	left:50%;
+	bottom:30px;
+	margin-left:-255px;
+	z-index:2;
+}
+.gmlogin_footer p{
+	color:#fff;
+	margin-bottom:4px;
+	text-align:center;
+	font-size:14px;
+}

@@ -1,0 +1,124 @@
+@CHARSET "UTF-8";
+/* 导航背景 */
+.gm_fullmain_layout .gm_layout_3bar {
+	height: 75px;
+	background: url(../../../img/imgPicture/gmbbp_bg.png) repeat-x 0 0;
+	border: none;
+	background-size: 4px 75px;
+	margin-bottom: 0;
+	z-index: 1;
+}
+/* logo */
+.gm_logo {
+	height: 100%;
+	width: 380px;
+}
+
+.gm_logo h1 {
+	margin: 0;
+}
+
+.gm_logo .gm_logo_img {
+	margin-left: 0px !important;
+	margin-top: 0px;
+	width: 380px;
+	height: 75px;
+	float: left;
+}
+
+.gm_logo .gm_logo_text {
+	display: none;
+}
+/* 导航菜单 */
+.gm_nav {
+	height: 40px;
+}
+
+.gm_nav ul {
+	display: inline-block;
+	height: 40px;
+}
+
+.gm_nav ul li {
+	float: left;
+	list-style: none;
+	height: 40px;
+	line-height: 40px;
+	cursor: pointer;
+	padding: 0 10px;
+}
+
+.gm_nav ul li a {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	line-height: 46px;
+	font-size: 14px;
+	display: inline-block;
+	color: #fff;
+}
+
+.gm_nav ul li a i {
+	width: 22px;
+	height: 22px;
+	margin: 6px 4px 10px 0px;
+	vertical-align: middle;
+	display: inline-block;
+	background: url(../../../img/imgPicture/gmbbp_lefticon.png) no-repeat;
+	background-size: 300px;
+}
+
+.gm_nav ul li a:hover, .gm_nav ul li.gm_navactive a {
+	text-decoration: none;
+	color: #f0ff00;
+}
+
+.gm_nav ul li:nth-of-type(1):hover a i, .gm_nav ul li:nth-of-type(1).gm_navactive a i
+	{
+	background-position: 0px -51px;
+}
+
+.gm_nav ul li:nth-of-type(2) a i {
+	background-position: -78px 2px;
+}
+
+.gm_nav ul li:nth-of-type(2):hover a i, .gm_nav ul li:nth-of-type(2).gm_navactive a i
+	{
+	background-position: -78px -24px;
+}
+
+.gm_nav ul li:nth-of-type(3) i {
+	background-position: -107px 2px;
+}
+
+.gm_nav ul li:nth-of-type(3):hover a i, .gm_nav ul li:nth-of-type(3).gm_navactive a i
+	{
+	background-position: -107px -24px;
+}
+
+.gm_nav ul li:nth-of-type(4) i {
+	background-position: -137px 1px;
+}
+
+.gm_nav ul li:nth-of-type(4):hover a i, .gm_nav ul li:nth-of-type(4).gm_navactive a i
+	{
+	background-position: -137px -25px;
+}
+
+.gm_nav ul li:nth-of-type(5) i {
+	background-position: -167px 2px;
+}
+
+.gm_nav ul li:nth-of-type(5):hover a i, .gm_nav ul li:nth-of-type(5).gm_navactive a i
+	{
+	background-position: -167px -24px;
+}
+
+.gm_nav ul li:nth-of-type(6) i {
+	background-position: -196px 1px;
+}
+
+.gm_nav ul li:nth-of-type(6):hover a i, .gm_nav ul li:nth-of-type(6).gm_navactive a i
+	{
+	background-position: -196px -25px;
+}

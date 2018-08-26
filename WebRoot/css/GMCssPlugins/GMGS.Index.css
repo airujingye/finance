@@ -1,0 +1,281 @@
+@CHARSET "UTF-8";
+/**
+ * 引入bootstrap基础样式
+ */
+@import url("../../css/GreatMap/GMBootstrap/bootstrap.css");
+
+/**
+ * 引入日期控件样式
+ */
+@import url("../../css/GreatMap/GMBootstrap/bootstrap-datetimepicker.min.css");
+
+/*全局样式*/
+body,.col-md-12,.col-md-11,.col-md-10,.col-md-9,.col-md-8,.col-md-7,.col-md-6,.col-md-5,.col-md-4,.col-md-3,.col-md-2,.col-md-1,.container,.row,ul,li{padding:0px;}
+body{font-size:12px;font-family:"微软雅黑","宋体","Arial Narrow",HELVETICA;color:#000;overflow-x:hidden;}
+body,html,div,span,p,i,a,h1,h2,h3,h4,h5{font-style: normal;font-family:"微软雅黑","宋体","Arial Narrow",HELVETICA;font-size:12px;}
+*{padding:0;margin:0;}
+.clearfix {clear: both;}
+.left{float:left;}
+.right{float:right;}
+.cursor{cursor: no-drop;color:#ccc !important;}
+ul{margin-bottom:0;}
+li{list-style: none;}
+a {color: #333;text-decoration: none;outline: none;zoom: 1;}
+a:focus, a:hover {text-decoration: none;}
+.gmgs_width{width:1200px;margin:0 auto;}
+.gm_redStart{color:red;font-size:18px;vertical-align: middle;line-height: 40px;}
+.gmgs_startmargin{margin-left:10px;}
+.gmgs_startpadding{padding-left: 20px!important;}
+.form-horizontal .form-group{margin-left:0;margin-right:0;}
+
+/* 头部  */
+.gmgs_header {margin: 0;padding: 0;background: url(../../img/hh_top_bj.png) no-repeat top center;}
+.gmgs_header_top {background:rgba(204,204,204,0.2);height:30px;line-height:30px;}
+.gmgs_header_left a img {margin:-3px 4px 0 0 ;width:18px;}
+.gmgs_header_right span {margin:0 6px;}
+.gmgs_header_right a {display:inline-block;}
+.gmgs_share,.gmgs_user {display:inline-block;position: relative;}
+.gmgs_user img {margin:-3px 4px 0 0 ;}
+.gmgs_user .gmsuper_userset {position:absolute;right:0;top:29px;width:88px;background:#f3f5fa;z-index:999;box-shadow:2px 2px 2px #f3f5fa;}
+.gmgs_user .gmsuper_userset a {font-size:14px;display:block;text-align:center;color:#5d5d5d;border-bottom:1px solid #ddd;height:auto;}
+.gmgs_user .gmsuper_userset a:hover {background:#1c7eba;color:#fff;}
+.gmgs_share img {margin:-3px 4px 0 0;}
+.gmgs_sc img,.gmgm_user img {margin:-3px 4px 0 0;}
+.gmgs_sc img,.gmgm_user b {font-weight:200;cursor: pointer;}
+.gmgs_sharebox {background:#fff;position: absolute;top:22px;left: -35px;width: 152px;z-index: 99;padding-left: 10px;}
+
+/* 头部logo */
+.gmgs_header_logo{margin:10px 0 10px 0;}
+.gmgs_header_logo .gmgs_header_logoleft .gmgs_logo {display:inline-block;float:left;width: 63px;height: 60px;overflow:hidden;}
+.gmgs_header_logo .gmgs_logo img {width:100%;height:100%;border-radius: 50%;}
+.gmgs_header_logo .gmgs_logo_text {padding: 1px 0 0 10px;display: inline-block;}
+.gmgs_header_logo .gmgs_logo_text .gmgs_title {color: #1c7eba;font-weight: bold;font-size: 25px;}
+.gmgs_header_logo .gmgs_logo_text .gmgs_address_text {color: #6b6b6b;letter-spacing: 4px;font-size:14px;display: inline-block;width: 100%;text-align: center;}
+
+/* 头部搜索  */
+.gmgs_header_rightinput{margin:13px 0 0 0;}
+.gmgs_header_rightinput input{width:30%;vertical-align: middle;margin: 1px 4px 0 0;}
+.gmgs_header_rightinput button{background:#1c7eba;border-color:#1c7eba;color:#fff;}
+.gmgs_header_rightinput button:hover{background:#28a2ec;color:#fff;border-color:#28a2ec;}
+
+/* 头部定位  */
+.gmgs_add_modal h4{font-size:16px;}
+.gmgs_addinfo{border:1px solid #ddd;background: #fff;position: absolute;border-radius: 4px;box-shadow: 0 5px 15px rgba(0,0,0,.5);z-index:999;}
+.gmgs_header_top .gmgs_header_left .gmgs_addinfo a{color: #000;}
+.gmgs_add_modal .modal-header span{font-size:24px;}
+.gmgs_addinfo .gmgs_addinfo_city{border-right:1px solid #ddd;}
+.gmgs_addinfo .gmgs_addinfo_county{font-size:14px;min-width: 200px;}
+.gmgs_addinfo .gmgs_addinfo_city a{display:block;height:41px;line-height:41px;padding:0px 20px;font-size:14px;border-bottom: 1px solid #ddd;}
+.gmgs_addinfo_county_context{height:41px;padding:0 0 0 10px;line-height:41px;font-size:14px;border-bottom: 1px solid #ddd;}
+.gmgs_addinfo_county_context a{margin:0 10px 0 0;}
+.gmgs_addinfo_county_context a.gmgs_address_name{cursor: pointer;}
+.gmgs_addinfo_county_context:last-of-type{border-bottom:none;}
+.gmgs_addinfo .gmgs_addinfo_city a:last-of-type{border-bottom:none;}
+
+/* 二维码  */
+.gmgs_code{height: 100px; width: 100px;right:0px;position: fixed;margin-right: 20px;margin-top: 22px;z-index:9}
+.gmgs_code img{height: 100px; width: 100px;}
+
+/* 头部退出  */
+.gmgs_quite_title{font-size: 18px;}
+
+/**导航样式**/
+.gmgs_nav {width: 100%;height: 52px;margin:0 auto;}
+.gmgs_nav .container {width: 1200px;margin: 0 auto;height: 52px;background:#1c7eba;padding:0;} 
+.gmgs_nav .container a {float: left;line-height: 52px;color: #fff;text-decoration: none;display: block;text-align: center;width: 171px;height: 52px;font-size: 16px;background: url(../../img/gmgs_xt.png) no-repeat center right;}
+.gmgs_nav .container a:last-child {background:none;width:174px;}
+.gmgs_nav .container a:last-child:hover {background:#28a2ec;}
+.gmgs_nav a {height:100%;display:inline-block;padding:0px 20px;line-height:40px;color:#FFF;font-size:14px;text-decoration:none;}
+.gmgs_nav a:hover,.gmgs_nav a.on {background:#28a2ec!important;}
+
+/* 轮播图 */
+.gmgs_middle .gmgs_main .gmgs_imgscarousel{width: 700px;height: 370px;float:left;}
+.gmgs_news_banner,.gmgs_news_banner .item,.gmgs_news_banner .item>a{width: 700px;height:370px;}
+.gmgs_news_banner .item a{display:inline-block;}
+.gmgs_news_banner .item a img{display:inline-block;width: 700px;height:370px;}
+.gmgs_imgsnumber {-webkit-margin-before:0;-webkit-margin-after:0;bottom: 36px;}
+.gmgs_imgsnumber li {height: 6px;width: 25px;border-radius:2px;}
+.gmgs_imgsnumber li.active{height: 6px;width: 25px;margin:1px;background:#0066c0;border:none !important;}
+.gmgs_banner_tip {height:30px;bottom:0px;background:#000;opacity:0.7;position:absolute;z-index:2;}
+.gmgs_banner_tip:hover {opacity:0.8;}
+.gmgs_banner_tip_text {display:inline-block;color:#FFF;line-height:30px;padding-left:17px;text-decoration:none;font-size:13px;}
+.gmgs_banner_tip_text:hover {color:#FFF;text-decoration:none;}
+
+/* 轮播图右侧内容 */
+.gmgs_cont_title{background:#f1f1f1;padding:10px 0 10px 10px;margin:0 0 10px 0;}
+.gmgs_cont_titletext{margin-left:10px;width: 334px;}
+.gmgs_cont_titletext p{width:360px;margin: 0;font-size:14px;line-height: 20px;color:#959595;word-break: break-all;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow:hidden;}
+.gmgs_cont_bg{background:#1c7eba;color:#fff;padding:8px 14px;}
+.gmgs_cont_bg span{text-align:center;font-size:20px;border-bottom:1px solid #fff;padding-bottom:4px;font-weight: bold;color:#FFF;}
+.gmgs_cont_bg p{text-align:center;margin:0;font-size:14px;margin-top:7px;font-weight: bold;line-height: 24px;}
+.gmgs_middle .gmgs_main .gmgs_cont_title h3 {margin-top:0;width: 334px;height: 17px;overflow: hidden;}
+.gmgs_middle .gmgs_main .gmgs_cont_title h3 a {font-size:16px;height:17px;color:#1c7eba;text-align:left;font-weight: bold;display:block;}
+.gmgs_cont_title .gmgs_cont_bg span{color:#fff;padding:0;}
+.gmgs_cont_title .gmgs_cont_titletext h3 a{background: none;padding-left:0;}
+
+/* 主体内容  */
+.gmgs_content {width: 100%;height: auto;margin: 0 auto;background: #fff url(../../img/hh_content_bj.png) no-repeat;}
+.gmgs_middle {width: 1190px;background:#fff;margin: 0 auto;padding:10px 0 0 10px;margin-top:20px;box-sizing: content-box;}
+
+.gmgs_middle .gmgs_main .gmgs_news .gmgs_index_module_first .gmgs_newslist_first {margin:0;height:370px;}
+.gmgs_middle .gmgs_main .gmgs_index_module {margin-top:10px;}
+
+.gmgs_middle .gmgs_main .gmgs_index_module .gmgs_news{width:100%;display:inline-block;}
+.gmgs_middle .gmgs_main .gmgs_index_module .gmgs_newslist{margin-top:-10px;}
+.gmgs_middle .gmgs_main .gmgs_newslist{width:100%;margin:10px 0 0 0;height: 272px;overflow: hidden;}
+.gmgs_middle .gmgs_main .gmgs_newslist li{line-height:34px;list-style:none;}
+.gmgs_middle .gmgs_main .gmgs_newslist a{padding-left:12px;font-size:14px;color:#333;text-decoration:none;background:url("../../img/gmgs_wz.png") left center no-repeat;}
+.gmgs_middle .gmgs_main .gmgs_newslist a:hover{color:#0066c0;text-decoration: underline;}
+.gmgs_middle .gmgs_main .gmgs_newslist span{color:#9d9d9d;float:right;}
+
+/* 主题内容-模块头部更多按钮  */
+.gmgs_middle .gmgs_main .gmgs_index_module .gmgs_news_title{border-bottom: 1px solid #979797;margin-bottom: 16px;}
+.gmgs_middle .gmgs_main .gmgs_index_module .gmgs_news_title h4{margin-top:0;color: #1c7eba;border-bottom: 3px solid #1c7eba;display: inline-block;font-size: 16px;font-weight: 800;line-height: 14px;padding: 8px;margin-bottom: -1px;}
+.gmgs_middle .gmgs_main .gmgs_index_module .gmgs_news_title .gmgs_more{font-size:14px;display:inline-block;float:right;color:#1c7eba;text-decoration:none;margin-top:7px;padding-right:10px;}
+.gmgs_middle .gmgs_main .gmgs_index_module .gmgs_news_title .gmgs_more:hover{color:#054277;}
+
+/* 办事指南模块   */
+.gmgs_work_guide a{display:inline-block;margin:0 0 10px 0;}
+.gmgs_work_guide a:hover{border-color:#1c7eba;}
+.gmgs_work_guide a span{margin:-2px 6px 0 10px;vertical-align: middle;background-position:0px 0px;background:url(../../img/gmgs_icon.png) no-repeat;display:inline-block;width:18px;height:18px;}
+.gmgs_work_guide a:nth-child(2n){margin-left:10px;}
+.gmgs_work_guide a:nth-child(2) span{background-position:0px -25px;}
+.gmgs_work_guide a:nth-child(3) span{background-position:0px -50px;}
+.gmgs_work_guide a:nth-child(4) span{background-position:0px -80px;}
+
+/* 网上大厅模块   */
+.gmgs_index_module .gmgs_online_imgs {text-align:right;}
+.gmgs_index_module .gmgs_online_imgs a{position: relative;display: inline-block;}
+.gmgs_index_module .gmgs_online_imgs a:nth-of-type(2){margin-top:10px;}
+
+/* 联系我们模块   */
+.gmgs_contact_us a {width:100%;height:140px;display:inline-block;}
+.gmgs_contact_us img {width:100%;height:140px;}
+.gmgs_contact_address p {font-size:14px;}
+.gmgs_contact_address p span {display:inline-block;width:24px;height:24px;background:url(../../img/gmgs_icon.png) no-repeat;vertical-align: middle;margin: -8px 8px 0 0;}
+.gmgs_contact_address .gmgs_contact_contactus {margin:22px 0 0 0;}
+.gmgs_contact_address .gmgs_contact_contactus span {background-position:-68px 0px;}
+.gmgs_contact_address .gmgs_contact_addressinfo {margin:18px 0 0 0;}
+.gmgs_contact_address .gmgs_contact_addressinfo span {background-position:-72px -30px;}
+
+/* 互动交流模块   */
+.gmgs_interact a{color: #1c7eba;margin: 0 20px 20px 26px;display: inline-block;padding: 14px 20px 6px 20px;text-align: center;border: 1px solid transparent;border-color: #92cdf1;background: #eff9ff;}
+.gmgs_interact a:hover {border-color: #4998c7;background: #eaf3f9;}
+.gmgs_interact a span{margin:0 auto;display:block;width:50px;height:50px;background:url(../../img/gmgs_icon.png) no-repeat;}
+.gmgs_interact a p{font-size:14px;margin:4px 0 0 0;}
+.gmgs_interact a .gmgs_quest{background-position:-67px -234px;}
+.gmgs_interact a .gmgs_about{background-position:0px -175px;}
+.gmgs_interact a .gmgs_business{background-position:-67px  -111px;}
+.gmgs_interact a .gmgs_suggest{background-position:0px  -111px;}
+
+/* 页面尾部  */
+.gmgs_footer {margin:0;height: 135px;width: 100%;background: #333;line-height: 24px;padding: 20px 0;color: #fff;font-size: 12px;text-align: center;}
+.gmgs_footer div {text-align:center;font-size:13px;color:#FFF;line-height:25px;}
+
+
+
+.reg_btn:hover{color: #fff; background: #337ab7;}
+.gmgs_validate_btn{margin: 2px 5px;border:none;height:40px;width:90px;line-height:40px;background:#0066c0;color:#fff;text-decoration:none;text-align:center;font-size:14px;}
+
+.gmgs_prompt_message{font-size:16px;color:#9d4840;}
+
+/* 我的申请 */
+.gmgs_myresers{font-size:16px;text-align:center;margin-bottom: 20px;}
+.gmgs_myresers tr th{text-align:center;}
+.gm_myapplyNo{text-align:center;margin-top:20px;}
+.gm_myapplyNo span {font-size:22px;}
+.gm_mainText_apply{text-align:center;margin-top:20px;}
+.gm_mainText_apply span{font-size:16px;color:#333;}
+.gm_mainText_apply .gm_application{font-size:16px;color:#0066c0 !important;text-decoration:none;}
+.gm_btn{width:100%;}
+
+/* 我的申请、我的预约  */
+.gmgs_name_text{text-align:left;width:70%}
+.gmgs_tdwidth{width:30%}
+.gmgs_quitebtn{width: 90%;margin-left: 5%;height: 40px;line-height: 40px;color: #FFF !important;border: none;border-radius: 4px;background: red;color:#FFF ;text-align:center;}
+
+/* 问题解答  */
+.gmgs_reply_ul{padding-top: 0px;padding-left: 36px;padding-right:21px;list-style-type:none;display: inline-block;width: 100%;}
+.gmgs_reply_ul li{font-size:14px;border-bottom:1px dashed #f1f1f1;display: inline-block;width: 100%;}
+.gmgs_reply_ul li.gmgs_reply_ul_title{border-bottom:1px solid #1c7eba;}
+.gmgs_reply_ul li td.gmgs_reply_name{text-align:center;height:40px;line-height:40px;width:50%;font-size:14px;}
+.gmgs_reply_ul li td.gmgs_reply_td{text-align:center;height:40px;line-height:40px;width:25%;font-size:14px;}
+.gmgs_reply_title{height:40px;line-height:40px;border-bottom:1px solid #f1f1f1;padding-left:20px;color:#333;}
+.gmgs_reply_info{min-height:120px;border-bottom:1px solid #f1f1f1;padding:20px;color:#333;line-height:20px;font-size:15px;}
+.gmgs_reply_text{min-height:220px;border-bottom:1px solid #f1f1f1;padding:20px;color:#333;line-height:20px;font-size:15px;}
+.gmgs_answer{line-height:32px;}
+.gmgs_reply_text_content{border-bottom: 1px dashed #a9a9a9;height: 45px;margin-bottom:20px;}
+.gmgs_reply_text_content .gmgs_reply_font{font-size: 20px;color: #c50000;font-weight:bolder;}
+.gmgs_reply_text_content .gmgs_reply_time{float:right;color:#0066c0;}
+
+@media screen and (min-width: 1200px) {
+	.container{width:1200px;}
+	.gmgs_module_left {width:350px;}
+	.gmgs_module_center {margin:0 0 0 24px;width:510px;}
+	.gmgs_module_right {width:292px;}
+	.gmgs_middle .gmgs_main .gmgs_index_module_first{width: 470px;float: left;margin-left: 20px;}
+}
+
+@media screen and (max-width: 1200px) {
+	body,html.gmgs,.gmgs_width,.container,.gmgs_header_logo,.gmgs_nav .container,.gmgs_content,.gmgs_middle,.gmgs_main{width:100%;}
+	.gmgs_header_logoleft,.gmgs_header_rightinput{display:inline-block;vertical-align: middle;}
+	.gmgs_header_rightinput{float:right;}
+	.gmgs_header_rightinput input{width:70%;}
+	.gmgs_middle .gmgs_main{width:100%;padding:10px 1% 0 1%;}
+	.gmgs_middle{padding:0;}
+	/* 导航 */
+	.gmgs_nav .container a{width:14.28%;}
+	.gmgs_nav .container a:last-child{width:14.32%;}
+	/* 内容 */
+	
+	/* 焦点图 */
+	.gmgs_middle .gmgs_main .gmgs_imgscarousel{width:54%;}
+	.carousel-inner, .carousel-inner .item, .carousel-inner .item>a{width:100%;}
+	.carousel-inner .item a img{display: inline-block;width: 100% !important;height:auto;}
+	/* 焦点图右侧 */
+	.gmgs_middle .gmgs_main .gmgs_index_module_first{width:44%;margin-left:2%;}
+	.gmgs_cont_titletext{width:78%;}
+	.gmgs_cont_title h3,.gmgs_cont_titletext p{width:100%;}
+	
+	.gmgs_module_right {display:none;}
+	.gmgs_module_left {width:40%;}
+	.gmgs_module_center {width:58%;margin-left:2%;}
+}
+
+@media screen and (max-width: 768px) {
+	/* 登录页面 */
+	.gm_login_registerText{border: 1px solid #fff }
+	.gm_login_backIndex,.gm_login_registerText{color:#1780da;}
+	.gm_myresers {margin-bottom: 20px;margin-left: 0;}
+}
+
+@media screen and (max-width: 320px) {
+	/* 登录页面 */
+	.gm_cationCode{ width: 150px}
+}
+
+/*网上申请*/
+.dyqscdjdebtors .gmgs_special_add{text-align:center;}
+.gmgs_housenumber{padding-top: 0px;display:none;padding-bottom:20px;}
+.gmgs_housenumber .gmgs_humber{padding-bottom: 10px;padding-top: 10px;padding-right:0px;}
+.gmgs_housenumber .gmgs_addhnumber{height:100%;text-align:center;padding-top:10px;}
+.gmgs_housenumber .gmgs_inputhnumber{width:97%;height:35px;font-size: 14px;}
+.tab-content input.gmgs_mortgagemoney{width:96%;height:35px;font-size: 14px;margin-left:-2px;}
+.gmgs_rpadding{padding-right:5px!important;}
+.tab-content .gmgs_mortgagebegin{width:80%;height:35px;font-size: 14px;margin-left:-2px;}
+/*success页面*/
+.hh_right .hh_rightcontent{padding-top:100px;}
+.hh_rightcontent p.hh_rightcontentp{padding-left: 242px;font-size: 25px;color: #66d304;padding-bottom: 42px;}
+.hh_rightcontent p.hh_rightcontentp img{padding-right: 20px}
+/*index首页*/
+.floadAd>a.gmgs_close{color: black;font-size: 14px;}
+.floadAd>a>img{width: 130px;height: 150px;}
+/*微信  */
+.hhhtp_banner .carousel-indicators li{height: 6px;width: 25px;border-radius:2px;}
+.carousel-inner .item>a{width:100%;max-height:480px;}
+.hhhtp_index_con{overflow-y:auto;padding-bottom:100px;}
+.gmgs_wxnews .gmgs_gmarticlecontent{color:#333;font-size:45px;}
+.gmgs_wxnews .gmgs_gmarticlecontent div{height:125px;}
+
+
+
